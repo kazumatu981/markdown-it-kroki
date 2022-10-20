@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
 const { inflateSync } = require('zlib');
 
-const { encode, generateUrl } = require('../../../lib/diagram-encoder');
+const { encode, generateUrl } = require('../../lib/diagram-encoder');
 
 describe('# [unit-test]: diagram-encoder.js', () => {
     describe('## [function]: encode()', () => {

@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const contract = require('../../../lib/contract');
+const contract = require('../../lib/contract');
 
 describe('# [unit test]: contract.js', () => {
     describe('## toNonEmptyString()', () => {
