@@ -46,5 +46,4 @@ describe('# [unit-test] plugin-core.js', () => {
             })
         });
     });
-    // TODO Add Tests for buildEmbedHTML()
 });

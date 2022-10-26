@@ -79,7 +79,7 @@ describe('[total test] Can Render', () => {
         });
 
         var result = md.render(
-            '```graphviz svg\r\n' +
+            '```graphviz [praphviz-image]\r\n' +
             'digraph G {Hello->World}\r\n' +
             '```\r\n'
         );

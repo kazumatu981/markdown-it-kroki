@@ -10,7 +10,7 @@ marp: true
 
 ## plantuml
 
-```plantuml
+```plantuml[platuml image]
 @startuml
 left to right direction
 actor Guest as g
@@ -35,7 +35,7 @@ g --> UC3
 
 ## mermaid
 
-```mermaid
+```mermaid[mermaid image]
 graph TD
   A[ Anyone ] -->|Can help | B( Go to github.com/yuzutech/kroki )
   B --> C{ How to contribute? }
