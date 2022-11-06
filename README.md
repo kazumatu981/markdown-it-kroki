@@ -4,7 +4,9 @@ This library is a pugin for markdown-it to create textual figure to svg (or png)
 
 > Especialy, design for marpit !!
 
-You can connect to [Kroki.io])(https://kroki.io/) in [Marp](https://marpit.marp.app/)
+To use this package, You can write Programing Diagram (like uml) is written by **code** in Marp Slides-deck.
+
+See sample code.
 
 ## Sample
 
@@ -37,6 +39,8 @@ You can connect to [Kroki.io])(https://kroki.io/) in [Marp](https://marpit.marp.
     ```
 
 ![plantuml-sample](img/plantuml-sample.png)
+
+If you want to write daigram, you write Diagram Language (like [plantuml](https://plantuml.com/), [mermaid.js](https://mermaid-js.github.io/mermaid/#/)) with in fenced code block.
 
 ## How to install
 
