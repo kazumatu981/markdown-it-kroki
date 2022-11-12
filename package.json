@@ -1,6 +1,6 @@
 {
   "name": "@kazumatu981/markdown-it-kroki",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "markdown-it kroki plugin.",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,9 @@
   "keywords": [
     "markdown-it",
     "markdown-it-plugin",
-    "kroki"
+    "kroki",
+    "marp",
+    "markdown"
   ],
   "author": "kazumatu981",
   "license": "MIT",
