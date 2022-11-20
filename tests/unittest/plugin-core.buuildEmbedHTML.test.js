@@ -108,6 +108,39 @@ describe('# [unit-test] plugin-core.js', () => {
 
                 expect(url.endsWith(expected)).to.true;
             });
+            it('* <img> is surounded by <marp-auto-scaling> on to be used form marp-it', () => {
+                const test = '@startuml\nBob -> Alice : hello\n @enduml';
+
+                const markdownIt = new md()
+                markdownIt['marpit'] = { someObject: 'is implemented' };
+                // build embed HTML
+                const plugin = new MarkdownItKrokiCore(markdownIt).setOptions();
+                plugin.use();
+                const html = plugin.buildEmbedHTML({ language: 'plantuml', alt: '' }, test);
+
+                // parse dom
+                const dom = new JSDOM(html);
+                const imgTag = dom.window.document.getElementsByTagName("img")[0];
+                const marpAutoScaling = dom.window.document.getElementsByTagName("marp-auto-scaling")[0];
+
+                expect(imgTag.isSameNode(marpAutoScaling.firstChild)).to.be.true;
+            });
+            it('* <img> is surounded by <marp-auto-scaling> on not to be used form marp-it', () => {
+                const test = '@startuml\nBob -> Alice : hello\n @enduml';
+
+                const markdownIt = new md()
+                // build embed HTML
+                const plugin = new MarkdownItKrokiCore(markdownIt).setOptions();
+                plugin.use();
+                const html = plugin.buildEmbedHTML({ language: 'plantuml', alt: '' }, test);
+
+                // parse dom
+                const dom = new JSDOM(html);
+                const marpAutoScaling = dom.window.document.getElementsByTagName("marp-auto-scaling");
+
+                expect(marpAutoScaling.length).to.equal(0);
+            })
+
         });
     });
 });
