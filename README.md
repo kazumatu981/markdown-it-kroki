@@ -99,7 +99,6 @@ module.exports = {
     inputDir: './slides',
     engine: ({ marp }) => marp.use(require('../index'), {
         entrypoint: "https://kroki.io",
-        marpAutoScaling: true
     })
 }
 ```
@@ -151,9 +150,8 @@ Write in `square blacket` after **Diagram Language**.
 
 ### Options of `constructor`
 
-| property-name     | type      | mean                                                   | defaul value              |
-| ----------------- | --------- | ------------------------------------------------------ | ------------------------- |
-| `entrypoint`      | `string`  | The entry point for Kroki server.                      | `'https://kroki.io'`      |
-| `marpAutoScaling` | `boolean` | Write marp-style `IMG`-tag, whether or not.            | `true`                    |
-| `containerClass`  | `string`  | class name of container (`DIV`-tag `class` attribute). | `'kroki-image-container'` |
-| `imageFormat`     | `string`  | image format of diagram. see [here](https://kroki.io/) | `'svg'`                   |
+| property-name    | type     | mean                                                   | defaul value              |
+| ---------------- | -------- | ------------------------------------------------------ | ------------------------- |
+| `entrypoint`     | `string` | The entry point for Kroki server.                      | `'https://kroki.io'`      |
+| `containerClass` | `string` | class name of container (`DIV`-tag `class` attribute). | `'kroki-image-container'` |
+| `imageFormat`    | `string` | image format of diagram. see [here](https://kroki.io/) | `'svg'`                   |
