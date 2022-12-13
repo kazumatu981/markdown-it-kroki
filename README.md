@@ -97,7 +97,7 @@ Here is the configuration file for **Marp**.
 ```javascript
 module.exports = {
     inputDir: './slides',
-    engine: ({ marp }) => marp.use(require('../index'), {
+    engine: ({ marp }) => marp.use(require('@kazumatu981/markdown-it-kroki'), {
         entrypoint: "https://kroki.io",
     })
 }
