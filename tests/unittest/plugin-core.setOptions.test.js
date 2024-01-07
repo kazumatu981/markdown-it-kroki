@@ -20,7 +20,7 @@ describe('# [unit-test] plugin-core.js', () => {
                 if (!expected) expected = 'https://kroki.io';
                 // parse dom
                 const dom = new JSDOM(htmlString);
-                const imgTag = dom.window.document.getElementsByTagName("img")[0];
+                const imgTag = dom.window.document.getElementsByTagName("embed")[0];
 
                 // get url attribute
                 const url = imgTag.getAttribute('src');
@@ -137,7 +137,7 @@ describe('# [unit-test] plugin-core.js', () => {
             function expectImageFormatToEmbed(htmlString, expected) {
                 // parse dom
                 const dom = new JSDOM(htmlString);
-                const imgTag = dom.window.document.getElementsByTagName("img")[0];
+                const imgTag = dom.window.document.getElementsByTagName("embed")[0];
 
                 // get url attribute
                 const url = imgTag.getAttribute('src');

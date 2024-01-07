@@ -33,6 +33,22 @@ g --> UC3
 
 ---
 
+## plantuml with hyperlink
+
+```plantuml
+@startuml
+left to right direction
+
+object  "[[https://github.com/markdown-it/markdown-it{markdown-it} markdown-it]]" as MarkdownIt
+
+object  "[[https://github.com/kazumatu981/markdown-it-kroki{markdown-it-krokii} markdown-it-krokii]]" as MarkdownItKrokii
+
+MarkdownIt --> MarkdownItKrokii
+@enduml
+```
+
+---
+
 ## mermaid
 
 ```mermaid[mermaid image]
