@@ -31,7 +31,7 @@ describe('# [unit-test] plugin-core.js', () => {
 
                 // parse dom
                 const dom = new JSDOM(html);
-                const imgTag = dom.window.document.getElementsByTagName("img")[0];
+                const imgTag = dom.window.document.getElementsByTagName("embed")[0];
 
                 // get url attribute
                 const url = imgTag.getAttribute('src');
@@ -53,7 +53,7 @@ describe('# [unit-test] plugin-core.js', () => {
                         { language: 'plantuml', alt: test }, diagramCode);
                     // parse dom
                     const dom = new JSDOM(html);
-                    const imgTag = dom.window.document.getElementsByTagName("img")[0];
+                    const imgTag = dom.window.document.getElementsByTagName("embed")[0];
 
                     expect(imgTag.hasAttribute('alt')).to.false;
                 });
@@ -71,9 +71,9 @@ describe('# [unit-test] plugin-core.js', () => {
                     { language: 'plantuml', alt: expected }, diagramCode);
                 // parse dom
                 const dom = new JSDOM(html);
-                const imgTag = dom.window.document.getElementsByTagName("img")[0];
+                const imgTag = dom.window.document.getElementsByTagName("embed")[0];
 
-                expect(imgTag.getAttribute('alt')).to.equal(expected);
+                expect(imgTag.getAttribute('title')).to.equal(expected);
 
             });
         });
@@ -101,7 +101,7 @@ describe('# [unit-test] plugin-core.js', () => {
 
                 // parse dom
                 const dom = new JSDOM(html);
-                const imgTag = dom.window.document.getElementsByTagName("img")[0];
+                const imgTag = dom.window.document.getElementsByTagName("embed")[0];
 
                 // get url attribute
                 const url = imgTag.getAttribute('src');
@@ -120,7 +120,7 @@ describe('# [unit-test] plugin-core.js', () => {
 
                 // parse dom
                 const dom = new JSDOM(html);
-                const imgTag = dom.window.document.getElementsByTagName("img")[0];
+                const imgTag = dom.window.document.getElementsByTagName("embed")[0];
                 const marpAutoScaling = dom.window.document.getElementsByTagName("marp-auto-scaling")[0];
 
                 expect(imgTag.isSameNode(marpAutoScaling.firstChild)).to.be.true;

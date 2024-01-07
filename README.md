@@ -155,3 +155,4 @@ Write in `square blacket` after **Diagram Language**.
 | `entrypoint`     | `string` | The entry point for Kroki server.                      | `'https://kroki.io'`      |
 | `containerClass` | `string` | class name of container (`DIV`-tag `class` attribute). | `'kroki-image-container'` |
 | `imageFormat`    | `string` | image format of diagram. see [here](https://kroki.io/) | `'svg'`                   |
+| `useImg` | `boolean` | use `<img>` tag for embed diagram. ( *for compatibility for past version* ) | `false` |

@@ -21,8 +21,8 @@ describe('# [Security-test] anti-injecttion for syntax.', () => {
                 '```\r\n'
             );
             const dom = new JSDOM(result);
-            const imgTag = dom.window.document.getElementsByTagName("img")[0];
-            const actual = imgTag.getAttribute('alt');
+            const imgTag = dom.window.document.getElementsByTagName("embed")[0];
+            const actual = imgTag.getAttribute('title');
 
             expect(actual).to.be.equal(expected);
         })
@@ -85,7 +85,7 @@ describe('# [Security-test] anti-injecttion for option.', () => {
                 '```\r\n'
             );
             const dom = new JSDOM(html);
-            const imgTag = dom.window.document.getElementsByTagName("img")[0];
+            const imgTag = dom.window.document.getElementsByTagName("embed")[0];
             const actual = imgTag.getAttribute('src');
 
             expect(actual).to.includes('/svg/');

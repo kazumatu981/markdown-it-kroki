@@ -56,7 +56,7 @@ describe('# [total test] Test pulugin can Render DOM', () => {
                     // find p-tag
                     const dom = new JSDOM(result);
                     const document = dom.window.document;
-                    const imgTags = document.getElementsByTagName("img");
+                    const imgTags = document.getElementsByTagName("embed");
 
                     // test img-tag is only one
                     expect(imgTags.length).to.be.equal(1);
