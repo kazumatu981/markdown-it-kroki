@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.2.2
+
+* fix readme, see [this pull-request](https://github.com/kazumatu981/markdown-it-kroki/pull/6)
+* support `dbml`, see [this issue](https://github.com/kazumatu981/markdown-it-kroki/issues/5)
+
 ## v1.2.1
 
 * Embed `<embed>` tag instead of `<img>` tag, see [this issue](https://github.com/kazumatu981/markdown-it-kroki/issues/2).
