@@ -1,10 +1,10 @@
 # markdown-it-kroki
 
-> This library was designed to embed [Kori.io](https://kroki.io/) diagram into [Marp](https://marp.app/) Slide-deks!!
+> This library was designed to embed [Kroki.io](https://kroki.io/) diagram into [Marp](https://marp.app/) slide decks!!
 
 
-This library is a pugin for markdown-it to embed figure is created by textual syntax.
-To use this package, You can embed **Software Diagram** (like uml) is written by **code** in Marp Slides-deck.
+This library is a plugin for markdown-it to embed figure created by textual syntax.
+To use this package, you can embed **Software Diagram** (like UML) written by **code** in Marp slide decks.
 
 See marp sample code.
 
@@ -40,11 +40,11 @@ See marp sample code.
 
 ![plantuml-sample](img/plantuml-sample.png)
 
-If you want to write daigram, you write Diagram Language (like [plantuml](https://plantuml.com/), [mermaid.js](https://mermaid-js.github.io/mermaid/#/)) with in fenced code block.
+If you want to write diagrams, you can use various syntaxes (such as [PlantUML](https://plantuml.com/) or [Mermaid](https://mermaid-js.github.io/mermaid/#/)) within fenced code blocks.
 
 ## How to install
 
-You can install `npm install` command like bellow.
+You can install `npm install` command like below.
 
 ```bash
 npm install -D @kazumatu981/markdown-it-kroki
@@ -53,25 +53,23 @@ npm install -D @kazumatu981/markdown-it-kroki
 ## How to use
 
 Here is the how to use `markdow-it-kroki`.
-This section introduce how to create Marp slides-deck project,
-and introduce how to create Marp slides-deck server.
+This section introduces how to create Marp slides deck project,
+and introduces how to create Marp slides deck server.
 
-You can find deltail info in [here](https://marp.app/),
-and you can learn about marp plugin eco-system, [here](https://marpit.marp.app/usage?id=extend-marpit-by-plugins).
+You can find detail [here](https://marp.app/),
+and you can learn about marp plugin ecosystem [here](https://marpit.marp.app/usage?id=extend-marpit-by-plugins).
 
-### **[1st step]** Create Slides-deck project
+### **[1st step]** Create slides deck project
 
-First, for create slides-deck, you have to prepair to **Marp Project** directory.
-So First, Create slides-deck project, and init npm package.
+First, to create a slides deck, you have to create a **Marp Project** directory and initialize a npm project.
 
 ```bash
 mkdir myslides
 cd myslides
-
 npm init -y
 ```
 
-Secondary, Build Marp Environment.
+Then, build a Marp environment.
 Install [@marp-team/marp-cli](https://github.com/marp-team/marp-cli).
 
 ```bash
@@ -88,7 +86,6 @@ git clone https://github.com/kazumatu981/markdown-it-kroki.git
 cd myslides
 npm install -D path/to/markdown-it-kroki
 ```
-
 
 ### **[3rd step]** Create `marp.config.js`.
 
@@ -137,9 +134,10 @@ You have to write diagram language by [fenced code block](https://spec.commonmar
 
     ```plantuml
 
-This package depends on kroki.io.
-If you want to know which is **supported diagram language**,
-you will see in [Kroki.io official web site (https://kroki.io/)](https://kroki.io/).
+> [!NOTE]  
+> This package depends on [Kroki.io](https://kroki.io).   
+> If you want to know which **diagram languages are supported**,
+> please check the official website at [https://kroki.io/](https://kroki.io/).
 
 #### Alt Text
 
