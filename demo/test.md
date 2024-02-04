@@ -49,6 +49,30 @@ MarkdownIt --> MarkdownItKrokii
 
 ---
 
+## dbml
+
+```dbml
+Table users {
+    id integer
+    username varchar
+    role varchar
+    created_at timestamp
+}
+
+Table posts {
+    id integer [primary key]
+    title varchar
+    body text [note: 'Content of the post']
+    user_id integer
+    created_at timestamp
+}
+
+Ref: posts.user_id > users.id
+```
+
+
+---
+
 ## mermaid
 
 ```mermaid[mermaid image]
