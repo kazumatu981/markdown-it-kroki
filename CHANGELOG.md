@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.2.3
+
+* support `d2`, see [this issue](https://github.com/kazumatu981/markdown-it-kroki/issues/8)
+
 ## v1.2.2
 
 * fix readme, see [this pull-request](https://github.com/kazumatu981/markdown-it-kroki/pull/6)
