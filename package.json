@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/**/*.test.js",
+    "test:coverage": "nyc --reporter=lcov --reporter=html mocha tests/**/*.test.js",
     "demo": "marp -s -c demo/marp.config.js"
   },
   "repository": {
