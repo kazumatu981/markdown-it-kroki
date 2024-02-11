@@ -154,3 +154,4 @@ Write in `square blacket` after **Diagram Language**.
 | `containerClass` | `string` | class name of container (`DIV`-tag `class` attribute). | `'kroki-image-container'` |
 | `imageFormat`    | `string` | image format of diagram. see [here](https://kroki.io/) | `'svg'`                   |
 | `useImg` | `boolean` | use `<img>` tag for embed diagram. ( *for compatibility for past version* ) | `false` |
+| `render` | `function` | if you render `html` yourself use this option. see [How To Write `render()` call back](memo/howToWriteRender.md) | `undefined` |

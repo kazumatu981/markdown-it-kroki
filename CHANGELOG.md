@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.3.0
+
+* support `render` option see [this issue](https://github.com/kazumatu981/markdown-it-kroki/issues/4) and [this memo](memo/howToWriteRender.md)
+* *for developers* support coverage test script `test:coverage`.
+
 ## v1.2.3
 
 * support `d2`, see [this issue](https://github.com/kazumatu981/markdown-it-kroki/issues/8)
