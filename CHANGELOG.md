@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.3.2
+
+* refactor url parser.
+  * **remark**: throw error on calling `use()` with invalid option (invalid `entrypoint` parameter).
+
 ## v1.3.1
 
 * update development packages
