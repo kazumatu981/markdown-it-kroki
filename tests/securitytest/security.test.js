@@ -31,21 +31,15 @@ describe('# [Security-test] anti-injecttion for syntax.', () => {
 describe('# [Security-test] anti-injecttion for option.', () => {
     describe("## for entrypoint", () => {
         it('* deny invalid URL', () => {
-            const md = new MarkdownIt();
-            md.use(MarkdownItKroki, {
+            const testFunction = () => {
+                const md = new MarkdownIt();
+                md.use(MarkdownItKroki, {
                 entrypoint: "https://kroki.io\"> <script src=\"xxxx.js",
-                marpAutoScaling: true,
-                containerClass: "the-container"
-            });
-
-            const html = md.render(
-                '```graphviz [this is a test]\r\n' +
-                'digraph G {Hello->World}\r\n' +
-                '```\r\n'
-            );
-            const dom = new JSDOM(html);
-            const scriptTag = dom.window.document.getElementsByTagName("script");
-            expect(scriptTag.length).to.equal(0);
+                    marpAutoScaling: true,
+                    containerClass: "the-container"
+                });
+            }
+            expect(testFunction).to.throw();
         })
     })
     describe("## for containerClass", () => {
