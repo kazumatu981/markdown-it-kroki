@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.3.3
+
+* marge [this pull request](https://github.com/kazumatu981/markdown-it-kroki/pull/16)
+
 ## v1.3.2
 
 * refactor url parser.
