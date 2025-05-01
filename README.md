@@ -155,3 +155,7 @@ Write in `square blacket` after **Diagram Language**.
 | `imageFormat`    | `string` | image format of diagram. see [here](https://kroki.io/) | `'svg'`                   |
 | `useImg` | `boolean` | use `<img>` tag for embed diagram. ( *for compatibility for past version* ) | `false` |
 | `render` | `function` | if you render `html` yourself use this option. see [How To Write `render()` call back](memo/howToWriteRender.md) | `undefined` |
+
+## FAQ
+
+You can find answer of frequently asked questions [here](faq.md).
